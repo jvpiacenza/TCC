@@ -29,7 +29,7 @@ document.getElementById("btn_ver").addEventListener("click",async()=>{
     })
     if(resposta.ok == true){
         const dados = await resposta.json()
-        document.getElementById("ver").innerText = JSON.stringify(dados)   
+        document.getElementById("ver").innerText = JSON.stringify(dados, null, 2)   
     }
 })
 
