@@ -59,10 +59,14 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
   `senha` varchar(256) NOT NULL,
   `nivel` varchar(50) NOT NULL DEFAULT '',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
--- Copiando dados para a tabela tcc.usuarios: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela tcc.usuarios: ~2 rows (aproximadamente)
 DELETE FROM `usuarios`;
+INSERT INTO `usuarios` (`id`, `email`, `senha`, `nivel`) VALUES
+	(1, 'joao@gmail.com', '123456', 'user'),
+	(2, 'julia@gmail.com', '654321', 'user'),
+	(3, 'arthur@email.com', 'arrozfeijão', 'user');
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
