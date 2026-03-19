@@ -4,9 +4,16 @@ const server = express()
 server.use(cors())
 server.use(express.json())
 const pool = require('./db.js')
-require('dotenv').config()
+const swaggerUi = require('swagger-ui-express') 
+const swaggerDocument = require('./swagger.json')
+
+
+
+require('dotenv').config()  
 
 const PORT = process.env.PORT
+
+server.use('/api-docs',swaggerUi.serve, swaggerUi.setup(swaggerDocument))
 
 server.listen(PORT,()=>{
     console.log(`Server rodando no http://localhost:${PORT}/`)
