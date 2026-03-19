@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-/* ===== VARIÁVEIS DE CORES ===== */
+
 :root {
     --primary-white: #ffffff;
     --primary-black: #000000;
@@ -27,7 +27,7 @@ body {
     padding: 2rem 1rem;
 }
 
-/* ===== CARDS (cada div vira um card) ===== */
+
 #cadastrar,
 #atualizar,
 #deletar_usuario,
@@ -50,7 +50,7 @@ body {
     box-shadow: 0 10px 25px rgba(12, 52, 112, 0.15);
 }
 
-/* ===== TÍTULOS ===== */
+
 h1 {
     font-size: 1.5rem;
     font-weight: 600;
@@ -72,7 +72,7 @@ h1::after {
     border-radius: 2px;
 }
 
-/* ===== LABELS E INPUTS ===== */
+
 label {
     display: block;
     font-size: 0.9rem;
@@ -101,7 +101,7 @@ input:focus {
     background: var(--primary-white);
 }
 
-/* ===== BOTÕES ===== */
+
 button {
     display: inline-flex;
     align-items: center;
@@ -167,7 +167,7 @@ button {
     box-shadow: 0 5px 15px rgba(12, 52, 112, 0.3);
 }
 
-/* ===== RESULTADO DO VER ===== */
+
 #ver {
     margin-top: 1rem;
     background: var(--light-gray);
@@ -180,7 +180,7 @@ button {
     min-height: 40px;
 }
 
-/* ===== LINK VOLTAR ===== */
+
 a {
     display: block;
     text-align: center;
@@ -202,7 +202,7 @@ a:hover {
     box-shadow: 0 5px 15px rgba(12, 52, 112, 0.3);
 }
 
-/* ===== RESPONSIVIDADE ===== */
+
 @media (max-width: 576px) {
     #cadastrar,
     #atualizar,
